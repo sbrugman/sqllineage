@@ -56,7 +56,6 @@ setup(
         "sqlparse==0.5.0",
         "networkx>=2.4",
         "sqlfluff==3.0.5",
-        "sqlalchemy>=2.0.0",
     ],
     entry_points={"console_scripts": ["sqllineage = sqllineage.cli:main"]},
     extras_require={
@@ -74,6 +73,9 @@ setup(
             "tox",
             "twine",
             "wheel",
+        ],
+        "sqlalchemy": [
+            "sqlalchemy>=2.0.0",
         ],
         "docs": ["Sphinx>=3.2.0", "sphinx_rtd_theme>=0.5.0"],
     },
